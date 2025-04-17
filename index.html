@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">
+        Sustainable Finance Innovation: Shaping the Future of Responsible
+        Investment
+      </h1>
+      <p id="description">
+        This survey aims to gather insights from professionals in the financial
+        sector regarding the adoption and impact of sustainable finance
+        practices. Your responses will contribute to understanding the evolving
+        landscape of responsible investment and innovation in this key financial
+        hub.
+      </p>
+    </header>
+    <form id="survey-form">
+      <section id="contact">
+        <h2 id="contact-heading">Contact Information</h2>
+        <label for="name" id="name-label">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="Ex: Thom Yorke"
+        />
+        <label for="email" id="email-label">E-mail</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="example@email.com"
+        />
+        <label for="phone" id="number-label">Phone</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          pattern="[0-9]{8,15}"
+          placeholder="Ex: 99441052"
+        />
+      </section>
+
+      <section id="role">
+        <h2 id="role-heading">Professional Information></h2>
+        <label for="role-dropdown"
+          >What is your primary role in the financial sector?</label
+        >
+        <select id="role-dropdown" name="role">
+          <option value="" disabled selected>Choose your option</option>
+          <option value="management">Asset Management</option>
+          <option value="banking">Banking</option>
+          <option value="fintech">Fintech</option>
+          <option value="regulatory">Regulatory/Compliance</option>
+          <option value="other">Other</option>
+        </select>
+
+        <fieldset>
+          <legend>
+            Which of the following best describes your company's current
+            approach to integrating sustainable finance practices?
+          </legend>
+          <div>
+            <input
+              type="radio"
+              id="fully-integrated"
+              name="sustainable"
+              value="fully-integrated"
+              required
+            />
+            <label for="fully-integrated">Fully integrated</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="developing"
+              name="sustainable"
+              value="developing"
+            />
+            <label for="developing">Developing a sustainable finance</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="not-considered"
+              name="sustainable"
+              value="not-considered"
+            />
+            <label for="not-considered">Not yet considered</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            Which of the following sustainable finance initiatives are currently
+            implemented in your organization?
+          </legend>
+          <div>
+            <input
+              type="checkbox"
+              id="green_bond"
+              value="green_bond"
+              name="initiatives"
+            />
+            <label for="green_bond">Green Bond Issuance</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="carbon"
+              value="carbon"
+              name="initiatives"
+            />
+            <label for="carbon">Carbon Offsetting Programs</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="sustainable"
+              value="sustainable"
+              name="initiatives"
+            />
+            <label for="sustainable"
+              >Sustainable Lending Practices Programs</label
+            >
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="impact"
+              value="impact"
+              name="initiatives"
+            />
+            <label for="impact">Impact Investment Strategies</label>
+          </div>
+          <div>
+            <input type="checkbox" id="none" value="none" name="initiatives" />
+            <label for="none">None of the above</label>
+          </div>
+        </fieldset>
+
+        <label for="comments">Comments</label>
+        <textarea
+          id="comments"
+          name="comments"
+          rows="4"
+          cols="50"
+          placeholder="Share any additional thoughts or feedback"
+        ></textarea>
+        <button type="submit" id="submit">Submit</button>
+      </section>
+    </form>
+  </body>
+</html>
